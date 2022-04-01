@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #b2fff8;
+    background-image: url('https://source.unsplash.com/1600x900/?weather');
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    background:rgba(66, 68, 68, 0.753) ;
+    padding: 2em;
+    margin: 20px 0px 34px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin: 2em 0 2em;
+    border-radius: 30%;
+    border: none;
+    height: 40px;
+    width: 46px;
+    outline: none;
+    background: white;
+    color: #0030ff;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.4em 0.7em;
+    margin:1em;    
+    border-radius: 30px;
+    background: #daf5f5;
+    color: #202555;
+    font-family: inherit;
+    font-size: 120%;
+}
+button:hover{
+    background: #1bfae0a8;
+}
+h1.temp{
+    margin: 0;
+}
+.weather{
+    color: white;
+    font-weight: bold;
+    text-shadow: #0030ff;
+}
+
+
+footer{
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    width: 100vw;
+    font-family: "Open sans";
+    padding-top:40px;
+    color: #003542;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: white;
+}
+.footer-content h4{
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+.footer-content h4:hover{
+    cursor: pointer;
+    color: rebeccapurple;
+    font-weight: bold;
+}
+.footer-content p{
+    max-width: fit-content ;
+    margin: 13px 18px;
+    line-height:  11px;
+    font-size: 15px;
+    
+}
+.footer-content p:hover{
+    cursor: pointer;
+    color: darkorange;
+    font-weight: bold;
+       
+}
+.footer-bottom {
+background: #c7ffec;
+width: auto;
+padding: 4px 0;
+text-align: center;
+}
+.footer-bottom p{
+    font-size: 16px;
+    word-spacing: 7px;
+    text-transform: capitalize;
+}
+
+@media (max-width:500px){
+
+    body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        background: #b2fff8;
+        background-image: url('https://source.unsplash.com/1600x900/?weather');  
+    } 
+    .card{
+        background:rgba(66, 68, 68, 0.753) ;
+        padding: 3em;
+        margin: 2em ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        width: 100%;
+        max-width:500px;
+        
+    }
+    .search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        margin: 2em 0 1em;
+        border-radius: 30%;
+        border: none;
+        height: 40px;
+        width: 40px;
+        outline: none;
+        background: white;
+        color: #0030ff;
+        cursor: pointer;
+        transition: 0.6s ease-in-out;
+    }
+    input.search-bar{
+        border: none;
+        outline: none;
+        padding: 0.2em 0.5em;
+        margin: 10px;    
+        border-radius: 30px;
+        background: #daf5f5;
+        color: #202555;
+        font-family: inherit;
+        font-size: 110%;
+    }
+    button:hover{
+        background: #1bfae0a8;
+    }
+    h1.temp{
+        margin: 10px 0 25px;
+    }
+    
+}
